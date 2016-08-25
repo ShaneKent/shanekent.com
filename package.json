@@ -14,7 +14,8 @@
       "mongodb" : "^2.1.18",
       "mongoose" : "^4.4.16",
       "pug" : "^2.0.0-alpha6",
-      "body-parser" : "^1.15.1"
+      "body-parser" : "^1.15.1",
+      "serve-favicon" : "^2.3.0"
    },
    "repository" : {
       "type" : "git",
