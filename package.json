@@ -1,0 +1,29 @@
+{
+   "name" : "shanekent.com",
+   "version" : "0.0.1",
+   "description" : "ShaneKent.com",
+   "engines" : {
+      "node" : "5.9.1"
+   },
+   "main" : "main.js",
+   "scripts" : {
+      "start" : "node main.js"
+   },
+   "dependencies" : {
+      "express" : "^4.13.3",
+      "mongodb" : "^2.1.18",
+      "mongoose" : "^4.4.16",
+      "pug" : "^2.0.0-alpha6",
+      "body-parser" : "^1.15.1"
+   },
+   "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/ShaneKent/shanekent.com.git"
+   },
+   "keywords" : [
+      "node",
+      "heroku",
+      "express"
+   ],
+   "license" : "SDK"
+}
