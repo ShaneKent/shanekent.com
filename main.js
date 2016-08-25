@@ -2,11 +2,11 @@ var express    = require("express");
 var mongoose   = require("mongoose");
 var bodyParser = require("body-parser"); 
 
-mongoose.connect(configDB.url);
+/*mongoose.connect(configDB.url);
 mongoose.connection.on('error', function() {
    console.log("Error: Connection to mongoose threw an error.");
    process.exit(1);
-});
+});*/
 
 var app     = express();
 var index   = require('./routes/index');

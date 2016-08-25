@@ -25,5 +25,5 @@
       "heroku",
       "express"
    ],
-   "license" : "SDK"
+   "license" : "MIT"
 }
