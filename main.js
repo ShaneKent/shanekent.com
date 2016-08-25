@@ -1,4 +1,5 @@
 var express    = require("express");
+var favicon    = require("serve-favicon");
 var mongoose   = require("mongoose");
 var bodyParser = require("body-parser"); 
 

@@ -6,7 +6,7 @@ router.use(bodyParser.json());
 
 router.get("/", function( request, response ) {
    console.log("ShaneKent.com - Request to page " + request.url);
-   res.render("pages/index");
+   response.render("pages/index");
 });
 
 module.exports = router;
