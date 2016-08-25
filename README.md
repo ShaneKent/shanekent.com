@@ -1,2 +1,2 @@
-# shanekent.com
-ShaneKent.com
+# You've stumbled upon this repository...
+This is the repository set up to maintain and check an organized layout of ShaneKent.com
