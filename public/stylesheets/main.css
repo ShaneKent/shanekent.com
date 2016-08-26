@@ -1,0 +1,38 @@
+body {
+   background-image: url("../pictures/main.jpg");
+   font-family: "Vollkorn";
+}
+
+#mainContainer {
+   height: 100%;
+   width: 75%;
+   min-width: 720px;
+
+   margin: auto;
+   background-color: rgba(230, 230, 230, 0.6);
+}
+
+#mainTitle {
+   font-size: 48px;
+   font-weight: bold;
+   color: rgba(30, 30, 30, 1);
+
+   width: 100%;
+   padding: 20px 0px 0px 0px;
+   text-align: center;
+}
+
+#mainTagLine {
+   font-size: 18px;
+   color: rgba(30, 30, 30, 0.5);
+
+   width: 100%;
+   padding: 0px 0px 20px 0px;
+   text-align: center;
+}
+
+#mainBreak {
+   border: 0;
+   height: 1px;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
