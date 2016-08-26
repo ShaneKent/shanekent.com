@@ -1,0 +1,10 @@
+html
+   head
+      title Post Emergency Safety Check
+   body
+      form(action="/admin/emergencySafetyCheck" method="POST")
+         p Password Needed for Posting Emergency Safety Check
+         input(type="password" name="password" placeholder="Password")
+         input(type="submit" value="Submit")
+   footer
+      include ../../partials/googleAnalytics.pug

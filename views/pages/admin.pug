@@ -1,7 +1,10 @@
 html
    head
+      link(rel="stylesheet" type="text/css" href="/stylesheets/admin.css")
       title Admin page
    body
-      p Admin page
+      #title Admin Page
+      a#postLink(href="/admin/createNewPost") Post Text Only
+      a#postLink(href="/admin/createNewEmergencySafetyCheck") Post Emergency Safety Check
    footer
       include ../partials/googleAnalytics.pug

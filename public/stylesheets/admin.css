@@ -1,0 +1,16 @@
+body {
+   background-color: rgba(30, 30, 30, 1);
+}
+
+#title {
+   font-size: 48px;
+   color: rgba(200, 200, 200, 0.95);
+
+   text-align: center;
+   padding: 20px 0px 10px 0px;
+}
+
+#postLink {
+   font-size: 24px;
+   color: rgba(230, 230, 230, 0.95);
+}
