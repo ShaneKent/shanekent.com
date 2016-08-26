@@ -3,6 +3,7 @@ var bodyParser = require("body-parser");
 var router     = express.Router();
 
 var Password = require("../config/models/password");
+var Post = require("../config/models/post");
 
 router.use(bodyParser.json());
 
@@ -32,7 +33,16 @@ router.post("/emergencySafetyCheck", function( request, response ) {
       if (passObj != undefined){
          if (passObj.password == passedPassword){
             console.log("\t\tPOSTING AN EMERGENCY SAFETY CHECK. THIS IS NOT A DRILL.");
-            response.redirect("/");
+
+            var emerPost = Post({
+               text : "I am safe. Friends and family, I wanted to let you know that I am safe and sound. I will be posting more information later, but for now take solice in the fact that I am okay. \n THIS POST WAS SET TO BE PUBLISH AUTOMATICALLY WHEN SHANE ENTERED A PASSWORD.",
+               date : new Date().toDateString()
+            });
+
+            emerPost.save( function( err ) {
+               console.log("\t\tEmergency Safety Post created...");
+               response.redirect("/");
+            });
          }
          else {
             console.log("\t\tWrong password posted...");
