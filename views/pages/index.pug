@@ -19,8 +19,8 @@ html
 
                each photo in post.photos
                   hr#break
-                  a(href="/pictures/" + photo.split(', ')[0].slice(1))
-                     img#postPicture(src= "/pictures/" + photo.split(', ')[0].slice(1))
+                  a(href=photo.split(', ')[0].slice(1))
+                     img#postPicture(src=photo.split(', ')[0].slice(1))
                   p#postCaption= photo.split(', ')[1].slice(0,-1)
 
                each video in post.videos
