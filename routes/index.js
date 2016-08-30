@@ -9,13 +9,13 @@ router.use(bodyParser.json());
 router.get("/", function( request, response ) {
    console.log("ShaneKent.com - Request to page shanekent.com" + request.url);
 
-   Post.find({ }, function( error, postList ) {
+   Post.find({ }).sort('-orderDate').exec( function( error, postList ) {
 
       if (postList == undefined){
          postList = [];
       }
 
-      response.render("pages/index", { postList : postList});
+      response.render("pages/index", { postList : postList });
    });
 
 });

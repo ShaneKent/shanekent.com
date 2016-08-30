@@ -1,7 +1,19 @@
 html
    head
-      title New Picture Post
+      title Create New Post
    body
-      p Create a New Post
+      form(action="/admin/newPost" method="POST")
+         p Post Title
+         input(type="text" name="title" placeholder="Post Title Here..." style="width:100%;")
+         p Post Text
+         textarea(type="text" name="text" placeholder="Post Text Here..." style="width:100%; height:50%; resize:none;")
+         p= "Photos - layed out as such (0829-01.jpg, Caption2 here) , (0829-02.jpg, Caption2 here)"
+         input(type="text" name="photos" placeholder="Photos Here..." style="width:100%;")
+         p= "Videos - layed out as such (0829-01.mp4, Caption2 here) , (0829-02.mp4, Caption2 here)"
+         input(type="text" name="videos" placeholder="Videos Here..." style="width:100%;")
+         hr
+         p Password Needed for Submission
+         input(type="password" name="password" placeholder="Password")
+         input(type="submit" value="Submit")
    footer
       include ../../partials/googleAnalytics.pug
